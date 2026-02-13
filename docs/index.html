@@ -20,31 +20,40 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_MX" />
 
-    <!-- Favicon (placeholder) -->
     <link rel="icon" href="favicon.ico" />
-
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header>
       <nav aria-label="Navegación principal">
-        <ul>
-          <li><a href="#nodo">Este Nodo</a></li>
-          <li><a href="#identidad">Identidad</a></li>
-          <li><a href="#construyo">Qué Construyo</a></li>
-          <li><a href="#metodo">Método Nexuz</a></li>
-          <li><a href="#ecosistema">Ecosistema</a></li>
-          <li><a href="#colaboraciones">Colaboraciones</a></li>
-          <li><a href="#accesos">Accesos</a></li>
-          <li><a href="#estado">Estado</a></li>
-        </ul>
+        <div class="container nav-inner">
+          <ul class="nav-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#nodo">Este Nodo</a></li>
+            <li><a href="#identidad">Identidad</a></li>
+            <li><a href="#construyo">Qué Construyo</a></li>
+            <li><a href="#metodo">Método Nexuz</a></li>
+            <li><a href="#ecosistema">Ecosistema</a></li>
+            <li><a href="#colaboraciones">Colaboraciones</a></li>
+            <li><a href="#accesos">Accesos</a></li>
+            <li><a href="#estado">Estado</a></li>
+          </ul>
+
+          <button
+            id="themeToggle"
+            class="nav-toggle"
+            type="button"
+            aria-pressed="false"
+          >
+            Modo claro
+          </button>
+        </div>
       </nav>
     </header>
 
     <!-- HERO -->
-    <section id="hero">
+    <section id="hero" class="section hero">
       <div class="container hero-inner">
         <h1>El Nexo del Nexuz</h1>
 
@@ -63,123 +72,636 @@
       </div>
     </section>
 
-    <main>
+    <main id="contenido">
+      <!-- 1. Este Nodo -->
       <section id="nodo" class="section">
         <div class="container">
-          <h2>1. Este Nodo</h2>
-          <!-- Aquí va el texto completo de la sección -->
+          <header class="section-head">
+            <h2>1. Este Nodo</h2>
+            <p class="section-lead">
+              Un punto de conexión: un nodo vivo donde convergen arte, programación y
+              sistemas para crear, desarrollar y mejorar.
+            </p>
+          </header>
+
+          <details class="disclosure" data-disclosure="nodo-mas">
+            <summary>Más sobre esto</summary>
+            <div class="disclosure-body">
+              <p><strong>¿Qué es esta página y por qué existe?</strong></p>
+
+              <p>
+                Esta página es mi Nexuz, un punto que existe porque el motivo de todo
+                nodo, nexo o ser es conectar con algo o con alguien.
+              </p>
+
+              <p>
+                La idea surgió a partir de una conversación sencilla. Hablando con un
+                amigo, reflexioné sobre cómo todos vivimos dentro de múltiples redes:
+                redes de amigos, de familia, de trabajo, de hobbies, y también redes que
+                aún no existen, pero que existirán.
+              </p>
+
+              <p>
+                Entonces aparece una pregunta inevitable: ¿qué une todas esas redes?
+              </p>
+
+              <p>La respuesta siempre es la misma: <strong>tú</strong>.</p>
+
+              <p>
+                Tú eres la unión. Cuando sales de una red, dejas de conectar con las
+                demás a través de ella. Cuando llegas a una nueva, la expandes. En cada
+                caso, eres quien decide qué conectar y qué desconectar.
+              </p>
+
+              <p>
+                Por eso existe esta página. No como un escaparate, sino como un punto de
+                conexión. Este es mi punto de encuentro contigo, con quien está leyendo
+                estas líneas.
+              </p>
+
+              <p>
+                <em>El Nexo del Nexuz</em> existe como un punto de convergencia: ideas,
+                proyectos, sistemas, arte y tecnología que forman parte de una misma
+                misión: <strong>crear, desarrollar y mejorar</strong>.
+              </p>
+
+              <p>
+                Aquí muestro lo que considero esencial para entender mi enfoque, mi forma
+                de pensar y el tipo de proyectos que construyo —y que me interesa seguir
+                construyendo— en tres ejes principales:
+              </p>
+
+              <ul>
+                <li>Arte</li>
+                <li>Programación</li>
+                <li>Sistemas y procesos</li>
+              </ul>
+
+              <p>
+                Este nodo no está terminado ni lo estará nunca. El desarrollo y la mejora
+                no tienen un punto final: evolucionan, se versionan y se ajustan, igual
+                que los sistemas que lo inspiran.
+              </p>
+
+              <p>
+                Si al recorrer este espacio encuentras conexiones propias, entonces este
+                lugar ya cumplió su función.
+              </p>
+
+              <p><strong>Bienvenido a <em>El Nexo del Nexuz</em>.</strong></p>
+            </div>
+          </details>
+
+          <details class="disclosure" data-disclosure="nodo-ejemplos">
+            <summary>Ejemplos</summary>
+            <div class="disclosure-body">
+              <p class="muted">
+                Próximamente: entradas rápidas del ecosistema (demos, pruebas, referencias).
+              </p>
+            </div>
+          </details>
         </div>
       </section>
 
+      <!-- 2. Identidad Integrada -->
       <section id="identidad" class="section">
         <div class="container">
-          <h2>2. Identidad Integrada</h2>
-          <!-- Texto -->
+          <header class="section-head">
+            <h2>2. Identidad Integrada</h2>
+            <p class="section-lead">
+              Miguel H. Calderón integra Mykuz y DevNexuz: arte, programación y sistemas
+              como capas del mismo recorrido.
+            </p>
+          </header>
+
+          <details class="disclosure" data-disclosure="identidad-mas">
+            <summary>Más sobre esto</summary>
+            <div class="disclosure-body">
+              <p>
+                Mi nombre es Miguel H. Calderón, también conocido como <em>Mykuz</em> o
+                <em>DevNexuz</em>.
+                Trabajo con distintos nombres porque opero en distintos contextos: Mykuz
+                está enfocado al arte, DevNexuz a proyectos de programación y sistemas, y
+                Miguel H. Calderón funciona como el punto que los integra.
+              </p>
+
+              <p>
+                No son identidades separadas, sino capas del mismo recorrido que operan
+                juntas y se refuerzan entre sí. Esa integración es la base desde la que
+                pienso, trabajo y construyo.
+              </p>
+
+              <p>El arte me enseñó a sentir y expresar.</p>
+              <p>La programación, a discernir y pensar.</p>
+              <p>Los sistemas, a organizar y orquestar.</p>
+
+              <p>
+                Desde ahí construyo procesos que van desde narrativas textuales, visuales
+                o auditivas, hasta marcos de trabajo, organización de recursos, flujos de
+                productividad y desarrollo de software orientado a resolver y optimizar.
+              </p>
+
+              <p>
+                Trabajo con herramientas mixtas: desde libretas, lápices y plumas, hasta
+                computadoras, servidores, equipos de trabajo y agentes de inteligencia
+                artificial concebidos como extensiones, no como sustitutos.
+              </p>
+
+              <p>
+                Más allá de lo técnico, lo que guía mi trabajo son criterios humanos:
+                curiosidad constante, voluntad de aprender y compartir, y la intención de
+                ser útil construyendo soluciones con sentido.
+              </p>
+
+              <p>
+                A menudo se espera que una persona elija una sola etiqueta o un solo
+                camino. Mi respuesta ha sido integrar en lugar de excluir, no por
+                dispersión, sino porque el pensamiento complejo requiere múltiples
+                herramientas.
+              </p>
+
+              <p><em>El Nexuz</em> no es un personaje.</p>
+              <p>Es el nombre que le doy a una forma de integrar, conectar y construir.</p>
+              <p>
+                Una idea difícil de definir con precisión, pero fácil de reconocer cuando
+                se encuentra.
+              </p>
+            </div>
+          </details>
+
+          <details class="disclosure" data-disclosure="identidad-ejemplos">
+            <summary>Ejemplos</summary>
+            <div class="disclosure-body">
+              <ul class="link-list">
+                <li>
+                  <a href="#accesos">Accesos principales</a>
+                  <span class="muted">— perfiles y repositorios</span>
+                </li>
+              </ul>
+            </div>
+          </details>
         </div>
       </section>
 
+      <!-- 3. Qué Construyo -->
       <section id="construyo" class="section">
         <div class="container">
-          <h2>3. Qué Construyo</h2>
-          <!-- Texto -->
+          <header class="section-head">
+            <h2>3. Qué Construyo</h2>
+            <p class="section-lead">
+              Soluciones articuladas con intención: piezas que funcionan, tienen sentido y
+              mejoran con el tiempo.
+            </p>
+          </header>
+
+          <details class="disclosure" data-disclosure="construyo-mas">
+            <summary>Más sobre esto</summary>
+            <div class="disclosure-body">
+              <p>
+                Mi trabajo no se entiende como piezas aisladas; construyo
+                <strong>soluciones articuladas con intención</strong>.
+              </p>
+
+              <p>
+                Lo que hago toma distintas formas —arte, código y procesos— pero siempre
+                parte del mismo impulso: crear algo que funcione, tenga sentido y pueda
+                mejorar con el tiempo.
+              </p>
+
+              <p>
+                Aquí muestro <strong>qué tipo de cosas construyo</strong>, no el método
+                completo con el que lo hago.
+              </p>
+
+              <h3>Arte</h3>
+              <p>
+                Construyo arte como un medio para explorar ideas, emociones y símbolos.
+                No solo como estética, sino como lenguaje.
+              </p>
+              <p>
+                Trabajo con narrativas textuales, visuales, auditivas y combinaciones
+                sensoriales: historias, personajes, universos, conceptos y piezas que no
+                buscan únicamente verse bien, sino decir algo y dejar espacio a la
+                interpretación.
+              </p>
+              <p>El arte, para mí, es una forma de pensamiento.</p>
+
+              <h3>Programación</h3>
+              <p>
+                Desarrollo software y herramientas con enfoque práctico: código que sirve,
+                optimiza y reduce fricción.
+              </p>
+              <p>
+                Trabajo desde pequeños scripts y utilidades hasta estructuras más complejas
+                como automatizaciones, prototipos y herramientas que resuelven problemas
+                reales o hacen más eficiente el uso del tiempo y los recursos.
+              </p>
+              <p>
+                La programación no es solo escribir código; es tomar decisiones que
+                permanecen.
+              </p>
+
+              <h3>Sistemas y procesos</h3>
+              <p>Diseño estructuras para organizar ideas, proyectos, equipos y recursos.</p>
+              <p>
+                Estos sistemas permiten pensar mejor, trabajar con claridad y adaptarse al
+                cambio mediante procesos, flujos de trabajo y organización de información.
+              </p>
+              <p>Un buen sistema no se impone: se adopta.</p>
+
+              <h3>Integración humano–máquina</h3>
+              <p>
+                Trabajo con herramientas digitales, equipos humanos y agentes de
+                inteligencia artificial concebidos como extensiones del criterio humano,
+                no como sustitutos.
+              </p>
+              <p>La tecnología amplifica capacidades cuando se usa con intención.</p>
+
+              <h3>Qué tipo de proyectos me interesa construir</h3>
+              <p>
+                Me interesan proyectos que crucen disciplinas, tengan sentido a largo
+                plazo, puedan evolucionar y respeten lo humano.
+              </p>
+              <p>
+                No busco producir por producir. Busco construir cosas que valga la pena
+                sostener.
+              </p>
+            </div>
+          </details>
+
+          <details class="disclosure" data-disclosure="construyo-ejemplos">
+            <summary>Ejemplos</summary>
+            <div class="disclosure-body">
+              <ul class="link-list">
+                <li>
+                  <strong>GitHub</strong>
+                  <span class="muted">— repositorios y utilidades</span>
+                  <a href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">Ver</a>
+                </li>
+                <li>
+                  <strong>Instagram</strong>
+                  <span class="muted">— arte visual y narrativo</span>
+                  <a href="https://instagram.com/TU-USUARIO" target="_blank" rel="noopener">Ver</a>
+                </li>
+              </ul>
+            </div>
+          </details>
         </div>
       </section>
 
+      <!-- 4. El Método Nexuz -->
       <section id="metodo" class="section">
         <div class="container">
-          <h2>4. El Método Nexuz</h2>
-          <!-- Texto -->
+          <header class="section-head">
+            <h2>4. El Método Nexuz</h2>
+            <p class="section-lead">
+              Una capa de coherencia: integra disciplinas y reduce fricción sin imponer rigidez.
+            </p>
+          </header>
+
+          <details class="disclosure" data-disclosure="metodo-mas">
+            <summary>Más sobre esto</summary>
+            <div class="disclosure-body">
+              <p>
+                <em>El Método Nexuz</em> es un marco de trabajo personal que desarrollé a
+                partir de la práctica, la experiencia y la integración de distintas
+                disciplinas.
+              </p>
+
+              <p>
+                No es una metodología cerrada ni un reemplazo de otras formas de trabajo.
+                Funciona como una <strong>capa de coherencia</strong> que acompaña los
+                proyectos sin imponerles una estructura rígida.
+              </p>
+
+              <p>
+                Aquí el foco cambia: más que describir resultados, se trata de mostrar
+                cómo pienso el trabajo, sin exponer los mecanismos internos del método.
+              </p>
+
+              <h3>Qué problema aborda</h3>
+              <p>
+                En muchos proyectos, el problema no es la falta de talento o de
+                herramientas, sino la fricción entre partes que no dialogan bien: visión
+                y ejecución, creatividad y técnica, personas y procesos.
+              </p>
+              <p>
+                El Método Nexuz existe para reducir esa fricción y facilitar la convivencia
+                entre enfoques distintos.
+              </p>
+
+              <h3>Relación con otros métodos</h3>
+              <p>
+                El Método Nexuz no sustituye metodologías existentes.
+                Está diseñado para integrarse a contextos ya definidos y complementar marcos de trabajo previos.
+              </p>
+              <p>Se adapta al proyecto, al equipo y a la etapa en la que se encuentra el trabajo.</p>
+
+              <h3>Principios generales</h3>
+              <p>
+                Sin revelar su estructura interna, el Método Nexuz se apoya en algunos principios orientadores:
+              </p>
+              <ul>
+                <li>Coherencia antes que acumulación</li>
+                <li>Claridad operativa</li>
+                <li>Evolución progresiva</li>
+                <li>Herramientas al servicio del criterio humano</li>
+                <li>Sistemas flexibles que se ajustan al contexto</li>
+              </ul>
+              <p>Estos principios orientan decisiones, no dictan recetas.</p>
+
+              <h3>Qué esperar al trabajar conmigo</h3>
+              <p>
+                Al colaborar conmigo, el Método Nexuz actúa como un marco de lectura y ajuste,
+                ayudando a que los procesos existentes funcionen con mayor fluidez.
+              </p>
+              <p>
+                No impone una forma única de trabajar.
+                Acompaña el trabajo para que sea más claro, sostenible y consistente.
+              </p>
+
+              <h3>Lo que no es</h3>
+              <p>
+                El Método Nexuz no es una fórmula universal ni una promesa de resultados automáticos.
+                Es una forma consciente de pensar el trabajo y sostener proyectos en el tiempo.
+              </p>
+            </div>
+          </details>
+
+          <details class="disclosure" data-disclosure="metodo-ejemplos">
+            <summary>Ejemplos</summary>
+            <div class="disclosure-body">
+              <p class="muted">Próximamente: casos de uso (estructura, ejecución, validación, versiones).</p>
+            </div>
+          </details>
         </div>
       </section>
 
+      <!-- 5. Ecosistema en Expansión -->
       <section id="ecosistema" class="section">
         <div class="container">
-          <h2>5. Ecosistema en Expansión</h2>
-          <!-- Texto -->
+          <header class="section-head">
+            <h2>5. Ecosistema en Expansión</h2>
+            <p class="section-lead">
+              Un conjunto vivo: ideas, proyectos y sistemas que se cruzan, evolucionan y vuelven a encontrarse.
+            </p>
+          </header>
+
+          <details class="disclosure" data-disclosure="ecosistema-mas">
+            <summary>Más sobre esto</summary>
+            <div class="disclosure-body">
+              <p>
+                Nada de lo que construyo existe de forma aislada.
+                Cada proyecto, idea o experimento forma parte de un ecosistema más amplio que se expande con el tiempo.
+              </p>
+
+              <p>
+                No se trata de un catálogo ni de un portafolio cerrado,
+                sino de un conjunto vivo de líneas que se cruzan, se separan y vuelven a encontrarse.
+              </p>
+
+              <h3>Proyectos creativos</h3>
+              <p>
+                Incluyen narrativas, universos, conceptos visuales, piezas experimentales y exploraciones artísticas
+                donde la historia, la estética y la tecnología dialogan.
+              </p>
+              <p>
+                Algunos proyectos nacen como ideas pequeñas y crecen.
+                Otros permanecen abiertos como espacios de exploración.
+              </p>
+
+              <h3>Proyectos técnicos</h3>
+              <p>
+                Herramientas, prototipos y sistemas creados para resolver problemas concretos,
+                optimizar procesos u organizar información.
+              </p>
+              <p>
+                Algunos funcionan como utilidades personales.
+                Otros evolucionan hacia proyectos colaborativos o profesionales.
+              </p>
+
+              <h3>Marcos y sistemas de trabajo</h3>
+              <p>
+                Parte del ecosistema vive en estructuras menos visibles:
+                flujos de trabajo, marcos híbridos y sistemas que sostienen el resto del trabajo.
+              </p>
+              <p>
+                No siempre se muestran como productos finales.
+                A menudo operan como infraestructura silenciosa.
+              </p>
+
+              <h3>Caminos abiertos</h3>
+              <p>
+                Este ecosistema no está cerrado.
+                Existen ideas en incubación, proyectos en desarrollo y rutas que aún no se han recorrido.
+              </p>
+              <p>
+                Algunas se activan mediante colaboraciones.
+                Otras aparecen cuando dos visiones compatibles se encuentran.
+              </p>
+            </div>
+          </details>
+
+          <details class="disclosure" data-disclosure="ecosistema-ejemplos">
+            <summary>Ejemplos</summary>
+            <div class="disclosure-body">
+              <ul class="link-list">
+                <li>
+                  <strong>Repositorios técnicos</strong>
+                  <span class="muted">— herramientas y prototipos</span>
+                  <a href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">Ver</a>
+                </li>
+                <li>
+                  <strong>Arte y narrativa</strong>
+                  <span class="muted">— piezas, universos, pruebas</span>
+                  <a href="https://instagram.com/TU-USUARIO" target="_blank" rel="noopener">Ver</a>
+                </li>
+              </ul>
+            </div>
+          </details>
         </div>
       </section>
 
+      <!-- 6. Colaboraciones y Proyectos -->
       <section id="colaboraciones" class="section">
         <div class="container">
-          <h2>6. Colaboraciones y Proyectos</h2>
+          <header class="section-head">
+            <h2>6. Colaboraciones y Proyectos</h2>
+            <p class="section-lead">
+              Colaboro cuando hay resonancia: objetivos claros, comunicación honesta y espacio para construir con intención.
+            </p>
+          </header>
 
-          <p>Si encuentras resonancia en este nodo, podemos iniciar conversación.</p>
+          <details class="disclosure" data-disclosure="colab-mas">
+            <summary>Más sobre esto</summary>
+            <div class="disclosure-body">
+              <p>Trabajo mejor cuando hay resonancia, no solo necesidad.</p>
 
-          <ul>
-            <li>
-              LinkedIn:
-              <a
-                href="https://linkedin.com/in/TU-USUARIO"
-                target="_blank"
-                rel="noopener"
-              >
-                Ver perfil profesional
-              </a>
-            </li>
-            <li>
-              Email profesional:
-              <a href="mailto:conectanexuz@gmail.com">conectanexuz@gmail.com</a>
-            </li>
-          </ul>
+              <p>
+                Me interesa colaborar en proyectos donde exista claridad de intención
+                y espacio para pensar, construir y mejorar de manera conjunta.
+              </p>
+
+              <p>
+                No busco imponer una forma de trabajo.
+                Prefiero integrarme a contextos existentes y aportar desde ahí.
+              </p>
+
+              <h3>Tipos de colaboración</h3>
+              <ul>
+                <li>Proyectos creativos donde convivan narrativa, estética y tecnología</li>
+                <li>Desarrollo de herramientas, software o sistemas con enfoque práctico</li>
+                <li>Diseño y optimización de procesos y flujos de trabajo</li>
+                <li>Proyectos híbridos que crucen lo creativo y lo técnico</li>
+              </ul>
+
+              <h3>Cómo suelo trabajar</h3>
+              <p>
+                Valoro los objetivos claros, la comunicación honesta y el respeto por el tiempo y el proceso.
+              </p>
+
+              <p>
+                El Método Nexuz se adapta al contexto del proyecto y del equipo.
+                No sustituye metodologías existentes: las acompaña.
+              </p>
+
+              <h3>Afinidad</h3>
+              <p>
+                Este espacio es para quienes buscan integrar disciplinas, valoran el criterio humano
+                y entienden que los proyectos evolucionan.
+              </p>
+
+              <p>
+                Probablemente no sea el lugar adecuado para quienes buscan resultados inmediatos
+                sin proceso o fórmulas rígidas.
+              </p>
+            </div>
+          </details>
+
+          <details class="disclosure" data-disclosure="colab-ejemplos">
+            <summary>Ejemplos / contacto</summary>
+            <div class="disclosure-body">
+              <p>Si encuentras resonancia en este nodo, podemos iniciar conversación.</p>
+
+              <ul>
+                <li>
+                  LinkedIn:
+                  <a href="https://linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener">
+                    Ver perfil profesional
+                  </a>
+                </li>
+                <li>
+                  Email profesional:
+                  <a href="mailto:conectanexuz@gmail.com">conectanexuz@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </details>
         </div>
       </section>
 
+      <!-- 7. Accesos -->
       <section id="accesos" class="section">
         <div class="container">
-          <h2>7. Accesos</h2>
+          <header class="section-head">
+            <h2>7. Accesos</h2>
+            <p class="section-lead">
+              Rutas al ecosistema: arte, código y trayectoria profesional conectados desde este nodo.
+            </p>
+          </header>
 
-          <ul>
-            <li>
-              Instagram — Arte visual y narrativo
-              <a
-                href="https://instagram.com/TU-USUARIO"
-                target="_blank"
-                rel="noopener"
-              >
-                Ver perfil
-              </a>
-            </li>
-            <li>
-              GitHub — Código y proyectos técnicos
-              <a href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">
-                Ver repositorios
-              </a>
-            </li>
-            <li>
-              LinkedIn — Trayectoria profesional
-              <a
-                href="https://linkedin.com/in/TU-USUARIO"
-                target="_blank"
-                rel="noopener"
-              >
-                Ver perfil
-              </a>
-            </li>
-          </ul>
+          <details class="disclosure" data-disclosure="accesos-mas">
+            <summary>Más sobre esto</summary>
+            <div class="disclosure-body">
+              <p>
+                Este sitio funciona como el nodo central de mi trabajo.
+                Desde aquí se accede a distintos espacios del ecosistema, cada uno con un propósito y un contexto específico.
+              </p>
+              <p>Cada acceso representa una extensión del mismo recorrido.</p>
+            </div>
+          </details>
+
+          <details class="disclosure" data-disclosure="accesos-ejemplos" open>
+            <summary>Accesos principales</summary>
+            <div class="disclosure-body">
+              <ul>
+                <li>
+                  Instagram — Arte visual y narrativo
+                  <a href="https://instagram.com/TU-USUARIO" target="_blank" rel="noopener">
+                    Ver perfil
+                  </a>
+                </li>
+                <li>
+                  GitHub — Código y proyectos técnicos
+                  <a href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">
+                    Ver repositorios
+                  </a>
+                </li>
+                <li>
+                  LinkedIn — Trayectoria profesional
+                  <a href="https://linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener">
+                    Ver perfil
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </details>
         </div>
       </section>
 
+      <!-- 8. Estado -->
       <section id="estado" class="section">
         <div class="container">
-          <h2>8. Estado del Nexuzsite</h2>
+          <header class="section-head">
+            <h2>8. Estado del Nexuzsite</h2>
+            <p class="section-lead">
+              Un sitio vivo y versionable: estable como v1.0, refinado editorialmente como v1.1.
+            </p>
+          </header>
 
-          <p>
-            Este sitio se presenta públicamente como <strong>v1.0</strong>, una
-            versión estable de este nodo dentro de una red de conexiones en
-            constante evolución.
-          </p>
+          <details class="disclosure" data-disclosure="estado-mas" open>
+            <summary>Más sobre esto</summary>
+            <div class="disclosure-body">
+              <p>
+                Este sitio se presenta públicamente como <strong>v1.0</strong>, una versión estable de este nodo dentro de una red de conexiones en constante evolución
+                no porque esté incompleto, sino porque está vivo.
+                Mientras tanto, este documento corresponde a una versión editorial de trabajo (<strong>v1.1</strong>), utilizada para refinar y evolucionar el contenido.
+              </p>
 
-          <p>
-            El Nexuzsite cambia, se ajusta y se expande conforme lo hacen los
-            proyectos, las ideas y los contextos que lo atraviesan.
-          </p>
+              <p>
+                El Nexuzsite funciona como un nodo central en evolución constante.
+                Cambia, se ajusta y se expande conforme lo hacen los proyectos, las ideas y los contextos que lo atraviesan.
+              </p>
 
-          <p>
-            Este nodo existe mientras exista conexión. No como destino final,
-            sino como punto de encuentro en movimiento.
-          </p>
+              <p>
+                Las versiones futuras pueden agregar accesos, profundizar proyectos o redefinir rutas,
+                pero no buscan cerrar nada, sino mantener abiertas las conexiones.
+              </p>
 
-          <p><strong>El Nexuzsite no se termina. Se versiona.</strong></p>
+              <p>
+                Lo que permanece es el núcleo: la intención de conectar, integrar y construir con sentido.
+              </p>
+
+              <p>
+                Este nodo existe mientras exista conexión.
+                No como un destino final, sino como un punto de encuentro en movimiento.
+              </p>
+
+              <p><strong>El Nexuzsite no se termina. Se versiona.</strong></p>
+            </div>
+          </details>
+
+          <details class="disclosure" data-disclosure="estado-ejemplos">
+            <summary>Roadmap</summary>
+            <div class="disclosure-body">
+              <ul>
+                <li><strong>v1.0</strong> — One-page estable (estructura + accesos + contacto).</li>
+                <li><strong>v1.1</strong> — Lectura por capas (sintetizado + detalle + ejemplos).</li>
+                <li><strong>v1.2</strong> — Ejemplos curados (cards, demos, highlights, enlaces).</li>
+                <li><strong>v2.0</strong> — Escalado modular (idiomas / secciones / rutas).</li>
+              </ul>
+            </div>
+          </details>
         </div>
       </section>
     </main>
@@ -190,6 +712,7 @@
         <p>© 2026 Miguel H. Calderón</p>
       </div>
     </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
-
