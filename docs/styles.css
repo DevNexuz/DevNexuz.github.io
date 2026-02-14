@@ -521,6 +521,75 @@ html[data-theme="light"] .nav-links a:hover {
   transform: translateY(1px);
 }
 
+/* Brand (logo en navbar) */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.brand-logo {
+  width: 34px;
+  height: 34px;
+
+  /* ruta a tu PNG */
+  --logo-url: url("assets/logo-nexuz.png");
+
+  /* el color real lo define el tema */
+  background: var(--brand-ink);
+
+  -webkit-mask-image: var(--logo-url);
+  mask-image: var(--logo-url);
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+
+  /* micro-shaping */
+  opacity: 0.95;
+  transform: translateZ(0);
+}
+
+/* Color por tema */
+html[data-theme="dark"] {
+  --brand-ink: var(--accent); /* azul cyber */
+}
+
+html[data-theme="light"] {
+  --brand-ink: #ffffff; /* blanco limpio */
+}
+
+/* Glow solo en dark (sutil) */
+html[data-theme="dark"] .brand-logo {
+  filter: drop-shadow(0 0 14px color-mix(in oklab, var(--accent) 35%, transparent))
+          drop-shadow(0 10px 22px color-mix(in oklab, black 30%, transparent));
+}
+
+/* Hover: pequeño empuje */
+@media (prefers-reduced-motion: no-preference) {
+  .brand-logo {
+    transition: transform var(--dur-2) var(--ease), opacity var(--dur-2) var(--ease),
+      filter var(--dur-2) var(--ease);
+  }
+
+  .brand:hover .brand-logo {
+    transform: translateY(-1px);
+    opacity: 1;
+  }
+
+  html[data-theme="dark"] .brand:hover .brand-logo {
+    filter: drop-shadow(0 0 18px color-mix(in oklab, var(--accent) 45%, transparent))
+            drop-shadow(0 12px 26px color-mix(in oklab, black 34%, transparent));
+  }
+}
+
+
 .nav-toggle {
   font-family: var(--font-mono);
   font-size: 0.92rem;
