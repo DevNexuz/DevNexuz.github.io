@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Título de la entrada -->
+    <title>[Título de la entrada] — Bitácora del Nexuz</title>
+
+    <!-- SEO básico -->
+    <meta
+      name="description"
+      content="[Resumen breve (140–160 chars) de la entrada. Qué es y por qué importa.]"
+    />
+    <meta name="author" content="Miguel H. Calderón (Mykuz / DevNexuz)" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="[Título de la entrada]" />
+    <meta property="og:description" content="[Resumen breve para compartir.]" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="es_MX" />
+
+    <!-- Opcional (cuando tengas cover) -->
+    <!-- <meta property="og:image" content="https://TUUSUARIO.github.io/TUREPO/og-cover.png" /> -->
+    <!-- <meta property="og:url" content="https://TUUSUARIO.github.io/TUREPO/bitacora/slug.html" /> -->
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <!-- Accesibilidad -->
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header>
+      <nav aria-label="Navegación principal">
+        <div class="container nav-inner">
+          <ul class="nav-links">
+            <li><a href="../index.html#hero">Inicio</a></li>
+            <li><a href="../index.html#bitacora">Bitácora</a></li>
+            <li><a href="../index.html#colaboraciones">Conectar</a></li>
+            <li><a href="../index.html#accesos">Accesos</a></li>
+          </ul>
+
+          <button id="themeToggle" class="nav-toggle" type="button" aria-pressed="false">
+            Modo claro
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido" class="section">
+      <div class="container">
+        <!-- Encabezado de la entrada -->
+        <header class="post-head">
+          <p class="post-kicker">
+            <a href="../index.html#bitacora">Bitácora del Nexuz</a>
+            <span class="muted">·</span>
+            <span class="muted">[Categoría: Nota / Devlog / Demo]</span>
+          </p>
+
+          <h1 class="post-title">[Título de la entrada]</h1>
+
+          <p class="post-subtitle">
+            [Subtítulo opcional: una línea que explique la intención o el ángulo.]
+          </p>
+
+          <div class="post-meta muted">
+            <span>Por Miguel H. Calderón</span>
+            <span class="muted">·</span>
+            <time datetime="2026-02-13">13 Feb 2026</time>
+            <span class="muted">·</span>
+            <span>[3–6 min]</span>
+          </div>
+
+          <!-- Etiquetas -->
+          <div class="post-tags">
+            <span class="tag">arte</span>
+            <span class="tag">programación</span>
+            <span class="tag">sistemas</span>
+            <!-- agrega/quita tags -->
+          </div>
+
+          <hr class="divider" />
+        </header>
+
+        <!-- Contenido -->
+        <article class="prose">
+          <p>
+            [Hook inicial: 2–4 líneas. Qué detonó esta entrada y qué va a dejar claro.]
+          </p>
+
+          <h2>Contexto</h2>
+          <p>
+            [Qué estaba pasando / qué problema o idea apareció.]
+          </p>
+
+          <h2>La idea central</h2>
+          <p>
+            [Explica la tesis en lenguaje claro. Sin humo. Con intención.]
+          </p>
+
+          <h2>Notas prácticas</h2>
+          <ul class="list">
+            <li>[Punto 1]</li>
+            <li>[Punto 2]</li>
+            <li>[Punto 3]</li>
+          </ul>
+
+          <details class="disclosure" data-disclosure="post-extras">
+            <summary>Notas extra / detrás de cámaras</summary>
+            <div class="disclosure-body">
+              <p>
+                [Aquí puedes dejar cosas más “de taller”: decisiones, dudas, alternativas, links internos.]
+              </p>
+            </div>
+          </details>
+
+          <blockquote>
+            <p>
+              “[Una frase-cierre o cita propia que resuma el espíritu de la entrada.]”
+            </p>
+          </blockquote>
+
+          <p>
+            [Cierre: 2–5 líneas. Qué sigue, o qué pregunta queda abierta.]
+          </p>
+        </article>
+
+        <!-- Navegación entre entradas -->
+        <nav class="post-nav" aria-label="Navegación entre entradas">
+          <a class="post-nav-link" href="./[entrada-anterior].html">
+            <span class="muted">Anterior</span>
+            <span>← [Título anterior]</span>
+          </a>
+
+          <a class="post-nav-link" href="./[entrada-siguiente].html">
+            <span class="muted">Siguiente</span>
+            <span>[Título siguiente] →</span>
+          </a>
+        </nav>
+
+        <!-- CTA suave -->
+        <section class="post-cta">
+          <div class="callout">
+            <p><strong>¿Resuena contigo?</strong></p>
+            <p class="muted">
+              Si quieres colaborar, proponer un proyecto o simplemente conectar:
+              <a href="../index.html#colaboraciones">aquí está el punto de entrada</a>.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>De México para el mundo 🇲🇽</p>
+        <p>© 2026 Miguel H. Calderón</p>
+      </div>
+    </footer>
+
+    <script src="../script.js" defer></script>
+
+    <!--
+    INTERNAL (NO PROMESA):
+    - Idea: agregar "Tabla de contenido" auto con JS cuando haya muchos h2/h3
+    - Idea: añadir "copiar link" a headings
+    - Nota: mantener entradas cortas, 3–6 min
+    -->
+  </body>
+</html>
