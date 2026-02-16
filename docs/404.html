@@ -13,8 +13,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_MX" />
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- CLAVE: ancla rutas al root del sitio (profile site: devnexuz.github.io) -->
+    <base href="/" />
+
+    <!-- Rutas absolutas para que no se rompa en /bitacora/xxxx -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
 
   <body>
@@ -24,10 +28,10 @@
       <nav aria-label="Navegación principal">
         <div class="container nav-inner">
           <ul class="nav-links">
-            <li><a href="index.html#hero">Inicio</a></li>
-            <li><a href="index.html#bitacora">Bitácora</a></li>
-            <li><a href="index.html#colaboraciones">Conectar</a></li>
-            <li><a href="index.html#accesos">Accesos</a></li>
+            <li><a href="/#hero">Inicio</a></li>
+            <li><a href="/#bitacora">Bitácora</a></li>
+            <li><a href="/#colaboraciones">Conectar</a></li>
+            <li><a href="/#accesos">Accesos</a></li>
           </ul>
 
           <button id="themeToggle" class="nav-toggle" type="button" aria-pressed="false">
@@ -65,7 +69,7 @@
         </details>
 
         <p style="margin-top: 1.5rem;">
-          <a class="btn" href="index.html#hero">Volver al Nexuz</a>
+          <a class="btn" href="/#hero">Volver al Nexuz</a>
         </p>
 
         <p class="muted" style="margin-top: 1.25rem;">
@@ -81,6 +85,7 @@
       </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <!-- Ruta absoluta para que siempre cargue el toggle de tema -->
+    <script src="/script.js" defer></script>
   </body>
 </html>
